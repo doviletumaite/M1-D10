@@ -1,0 +1,64 @@
+body {
+    max-width: 100%;
+    padding: 10px 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.link1 {
+    border-style: solid;
+    border-color: rgb(16, 148, 23);
+    display: inline-flex;
+}
+.link2 {
+    border-style: solid;
+    border-color: rgb(49, 20, 214);
+    display: inline-flex;
+}
+.link3 {
+    border-style: solid;
+    border-color: rgb(214, 20, 182);
+    display: inline-flex;
+}
+.link4 {
+    border-style: solid;
+    border-color: rgb(226, 43, 43);
+    display: inline-flex;
+}
+
+img {
+    height: 40px;
+    
+}
+
+table {
+    width: 100%;
+}
+
+tr:first-child {
+    border-color: rgb(53, 195, 119);
+}
+
+table, th, td {
+    padding: 5px;
+    text-align: left;   
+    border: solid;
+    border-collapse: collapse;
+  }
+
+
+.border {
+    border: 2px;
+    border-radius: 30px;
+}
+    p {
+        margin: 30px;
+    }
+
+.change-text{
+    text-transform: uppercase;
+    font-size: large;
+    font-style: oblique;
+}
