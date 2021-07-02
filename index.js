@@ -76,3 +76,34 @@ if (arrayA > arrayB) {
  }
 }
 
+// 30
+
+// 31
+const cointainer = document.getElementById("container"); 
+
+// 32
+const everyTd = document.querySelectorAll("td")
+
+// 33 
+const channgeAllTds = function () {
+    const newTextForTd = document.querySelectorAll("td");
+tdText.forEach((td) => {
+    td.innerText = "some text";
+})
+}
+channgeAllTds()
+
+// 34
+const changeHeading = function (content) {
+    const heading = document.querySelector("h1")
+    h1.innerText = content
+}
+changeHeading()
+
+//35
+const newRow = function () {
+const table = document.querySelector("table")
+const tr = document.querySelector("tr")
+table.appendChild(tr +1)
+}
+newRow()
