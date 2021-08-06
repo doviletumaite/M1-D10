@@ -76,3 +76,32 @@ table, th, td {
     color:rgb(33, 181, 192);
     font-weight: bold;
 }
+
+.d-none {
+    visibility: hidden;
+}
+
+.bg-red {
+    background-color: rgb(238, 104, 193);
+}
+
+.border-pink {
+    border-color: rgb(245, 146, 237);
+}
+
+button {
+    margin-right: 20px;
+    background-color: rgb(137, 214, 173);
+    border: hidden;
+    height: 30px;
+    width: 150px;
+    color: rgb(243, 14, 224);
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: rgb(181, 235, 206);
+    height: 35px;
+    width: 155px;
+    color: rgba(243, 14, 224, 0.596);
+}
