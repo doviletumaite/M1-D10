@@ -17,11 +17,13 @@
             <li>First</li>
             <li>Second</li>
             <li>Third</li>
+        </ol>
     </div>
 
 <hr>
 
     <table class="border">
+        <tbody>
 <tr>
     <th>FIRST COLUMN</th>
     <th>SECOND COLUMN</th>
@@ -32,32 +34,34 @@
 <tr >
     <td >sdgf</td>
     <td><a href="https://www.google.com/" target="_blank" class="link1"> <img src="img.jpeg">  </a></td>
-    <td>gsdgf</td>
+    <td> <a href="www.google.com">gsdgf</a></td>
     <td >gsdg</td>
     <td >khglg</td>  
 </tr>
 <tr>
     <td>sdgf</td>
     <td><a href="https://www.google.com/" target="_blank" class="link2"> <img src="img.jpeg">  </a> </td>
-    <td>gsdgf</td>
+    <td> <a href="www.google.com">gsdgf</a></td>
     <td>gsdg</td>
     <td>fsdgf</td>  
 <tr>
     <td>sdgf</td>
     <td> <a href="https://www.google.com/" target="_blank" class="link3"> <img src="img.jpeg">  </a> </td>
-    <td>gsdgf</td>
+    <td> <a href="www.google.com">gsdgf</a></td>
     <td>gsdg</td>
     <td>fsdgf</td>  
 </tr>
 <tr>
     <td>sdgf</td>
     <td><a href="https://www.google.com/" target="_blank" class="link4"> <img src="img.jpeg">  </a> </td>
-    <td>gsdgf</td>
+    <td> <a href="www.google.com">gsdgf</a></td>
     <td>gsdg</td>
     <td >fsdgf</td> 
 </tr>
+</tbody>
+  </table>
 
-<div class="cointainer">
+<div id="cointainer">
 <div class="change-text">
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, aliquid ipsa. Eum, quisquam illo! Exercitationem voluptatum adipisci culpa doloribus eligendi nihil tenetur possimus, hic quibusdam vitae repellat voluptas eaque placeat.</p>
 </div>
@@ -69,11 +73,164 @@
     </ul>
 
 </div>
-    </table>
+  
 
     <footer>
         <p>Some informations about the creator</p>
     </footer>
-    
+    <script>
+//  JS EXERCISES
+
+// 21
+let x = "John";
+let y = "Doe";
+console.log(x +" <> " + y);
+
+// 22
+const firstobject = {
+    name: "Mario",
+    surname: "Rossi",
+    email: "mariorossi@email.com",
+};
+
+// 23 
+
+delete firstobject.email;
+console.log(firstobject);
+
+// 24
+let tenStrings = [];
+for (let i = 0; i < 10; i++) {
+    tenStrings.push("New Value" + i)
+}
+
+console.log(tenStrings)
+
+// 25 
+
+// 26
+ let random = []
+ for (let i= 0; i < 100; i++) {
+     random.push(Math.floor(Math.random()*100))
+ }
+ console.log(random)
+
+ // 27
+ function minMax(){
+
+ }
+
+
+ // 28 
+
+ let arrayOfArrays = []
+ for (let i = 0; i < 10; i++) {
+     let firstArray = [];
+     for (let b = 0; b < 10; b++) {
+         firstArray.push(Math.floor(Math.random()*10))
+     }
+     arrayOfArrays.push(firstArray)
+ }
+ console.log(arrayOfArrays)
+
+
+ // 29
+ let arrayA = [];
+ for (let i = 0; i<89; i++){
+     arrayA.push(Math.floor(Math.random()*12))
+ }
+let sizeA = arrayA.length
+console.log(sizeA)
+ 
+ let arrayB = [];
+for (let i = 0; i<39; i++){
+    arrayB.push(Math.floor(Math.random()*82))
+}
+let sizeB = arrayB.length
+console.log(sizeB)
+
+ function  whoIsTheLongher (arrayA, arrayB){
+if (arrayA > arrayB) {
+    return arrayA
+ } else {
+     return arrayB
+ }
+}
+
+// 30
+
+// 31
+const container = document.getElementById("container"); 
+
+// 32
+const everyTd = document.querySelectorAll("td")
+
+// 33 
+
+//tdText.forEach((td) => {
+  //  td.innerText = "some text";
+//})
+
+
+// 34
+const changeHeading = function (content) {
+    const heading = document.querySelector("h1")
+    heading.innerText = content
+}
+changeHeading("This is a new title actually :)")
+
+//35
+const newRow = function () {
+const tbody = document.querySelector("tbody")
+const tr = document.createElement("tr")
+for (let i = 0; i < 5; i++) {
+    const td = document.createElement("td")
+    td.innerText = i + 1;
+    tr.appendChild(td)
+}
+tbody.appendChild(tr)
+}
+newRow()
+
+//36 Write a function to add the class "test" to each row in the table
+const newClassRow = function () {
+    const row = document.querySelectorAll("tr")
+    row.forEach((tr) => {
+        tr.classList.add("test")
+})
+}
+newClassRow()
+
+//37) Write a function to add a red background to every link in the page
+const redLinks = function () {
+    const link = document.querySelectorAll("a")
+    link.forEach((a) => {
+        a.classList.add("bg-links")
+    })
+}
+redLinks()
+
+//38) Console log "Page loaded" when the page is correctly loaded
+window.onload = function() {
+   console.log("page loaded")
+}
+
+//  39) Write a function to add new items to a UL
+ const newItemToMyUl = function () {
+     const ul = document.querySelector("ul")
+     const li = document.createElement("li")
+     li.innerText ="A new item for my unordered list :D"
+     li.classList.add("style-li")
+     ul.appendChild(li)
+ }
+ newItemToMyUl()
+
+ // 40) Write a function to empty a list
+ const emptyOl = function () {
+     const ol = document.querySelector("ol")
+     ol.innerText = "";
+ }
+emptyOl()
+    </script>
 </body>
 </html>

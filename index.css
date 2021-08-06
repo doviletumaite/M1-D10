@@ -62,3 +62,17 @@ table, th, td {
     font-size: large;
     font-style: oblique;
 }
+
+.test {
+    background-color: aquamarine;
+}
+.bg-links {
+    background-color: rgb(33, 168, 123);
+}
+.hidden {
+  visibility: hidden;
+}
+.style-li {
+    color:rgb(33, 181, 192);
+    font-weight: bold;
+}
